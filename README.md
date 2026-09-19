@@ -1,13 +1,31 @@
+<!--
+  NOTE ON STYLING (read before editing):
+  GitHub's markdown renderer strips the `style` attribute from every HTML
+  tag (img, div, etc.) for security reasons — it is not on their
+  sanitization allow-list. That means border-radius, border, and
+  box-shadow declarations NEVER render on github.com, no matter how they're
+  written. Only these img/div attributes survive: width, height, align.
+
+  This file uses only those supported attributes, so it renders identically
+  and correctly wherever it's viewed (github.com, GitHub mobile, most
+  markdown viewers) instead of depending on styling that silently vanishes.
+
+  The profile photo below is "mitchel.jpeg" — a circular crop with the
+  neon-green ring/glow baked directly into the image's pixels (flattened
+  onto a solid dark background matching the badge colors used elsewhere in
+  this file). That's the only way to get a ring effect on GitHub, since CSS
+  border-radius/box-shadow never render there.
+-->
+
 <div align="center">
 
-  <!-- Profile Image with Glowing Neon Cyber Border -->
+  <!-- Profile Image (circular crop + neon ring baked into the JPEG itself) -->
   <a href="https://github.com/mitchndinda-code">
-    <img 
-      src="./mitchel.jpeg" 
-      alt="Mitchel Ndinda Martin" 
-      width="160" 
-      height="160" 
-      style="border-radius: 50%; border: 3px solid #00E599; box-shadow: 0 0 25px rgba(0, 229, 153, 0.45); object-fit: cover;"
+    <img
+      src="./mitchel.jpeg"
+      alt="Mitchel Ndinda Martin"
+      width="200"
+      height="200"
     />
   </a>
 
@@ -18,9 +36,9 @@
 
   <!-- Dynamic Typing Animation SVG -->
   <a href="https://github.com/mitchndinda-code">
-    <img 
-      src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00E599&center=true&vCenter=true&width=620&lines=Software+Developer+%7C+Full-Stack+Engineer;BSc.+Computer+Science+%40+JKUAT;Python+%E2%80%A2+React+%E2%80%A2+PostgreSQL+%E2%80%A2+REST+APIs;Architecting+Robust%2C+Reliable+Digital+Artifacts;Available+for+Freelance+%26+Full-Time+Roles" 
-      alt="Typing SVG Animation" 
+    <img
+      src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00E599&center=true&vCenter=true&width=620&lines=Software+Developer+%7C+Full-Stack+Engineer;BSc.+Computer+Science+%40+JKUAT;Python+%E2%80%A2+React+%E2%80%A2+PostgreSQL+%E2%80%A2+REST+APIs;Architecting+Robust%2C+Reliable+Digital+Artifacts;Available+for+Freelance+%26+Full-Time+Roles"
+      alt="Typing SVG Animation"
     />
   </a>
 
@@ -92,9 +110,9 @@ Developer Profile:
 <div align="center">
   <!-- Dynamic Animated Skills Banner -->
   <a href="#-technical-arsenal--skills-matrix">
-    <img 
-      src="https://skillicons.dev/icons?i=python,java,js,cpp,cs,react,html,css,bootstrap,flask,django,postgres,mysql,sqlite,docker,linux,git,github,vscode,postman" 
-      alt="Tech Stack Icons" 
+    <img
+      src="https://skillicons.dev/icons?i=python,java,js,cpp,cs,react,html,css,bootstrap,flask,django,postgres,mysql,sqlite,docker,linux,git,github,vscode,postman"
+      alt="Tech Stack Icons"
     />
   </a>
 </div>
@@ -152,11 +170,10 @@ Developer Profile:
 > **Full-Stack Relational System for Higher Education Entity Management**
 
 <div align="center">
-  <img 
-    src="./public/images/academic-system/dashboard.png" 
-    alt="Academic Management System Dashboard" 
-    width="92%" 
-    style="border-radius: 10px; border: 1px solid #1f3354; box-shadow: 0 10px 30px rgba(0,0,0,0.5);"
+  <img
+    src="./public/images/academic-system/dashboard.png"
+    alt="Academic Management System Dashboard"
+    width="92%"
   />
 </div>
 
@@ -175,11 +192,10 @@ Developer Profile:
 <summary><b>🔍 View Secondary Interface Preview (Academic Records)</b></summary>
 <br/>
 <div align="center">
-  <img 
-    src="./public/images/academic-system/records.png" 
-    alt="Academic Management System Records View" 
-    width="90%" 
-    style="border-radius: 8px; border: 1px solid #1f3354;"
+  <img
+    src="./public/images/academic-system/records.png"
+    alt="Academic Management System Records View"
+    width="90%"
   />
 </div>
 </details>
@@ -190,11 +206,10 @@ Developer Profile:
 > **Centralized Opportunity Discovery Platform for Students**
 
 <div align="center">
-  <img 
-    src="./public/images/jkuat-portal/dashboard.png" 
-    alt="JKUAT Events & Opportunities Portal" 
-    width="92%" 
-    style="border-radius: 10px; border: 1px solid #1f3354; box-shadow: 0 10px 30px rgba(0,0,0,0.5);"
+  <img
+    src="./public/images/jkuat-portal/dashboard.png"
+    alt="JKUAT Events & Opportunities Portal"
+    width="92%"
   />
 </div>
 
@@ -213,11 +228,10 @@ Developer Profile:
 <summary><b>🔍 View Secondary Interface Preview (Opportunity Listings)</b></summary>
 <br/>
 <div align="center">
-  <img 
-    src="./public/images/jkuat-portal/opportunities.png" 
-    alt="JKUAT Opportunities Filtering" 
-    width="90%" 
-    style="border-radius: 8px; border: 1px solid #1f3354;"
+  <img
+    src="./public/images/jkuat-portal/opportunities.png"
+    alt="JKUAT Opportunities Filtering"
+    width="90%"
   />
 </div>
 </details>
@@ -241,26 +255,26 @@ timeline
 <div align="center">
 
   <!-- GitHub Stats Card -->
-  <img 
-    src="https://github-readme-stats.vercel.app/api?username=mitchndinda-code&show_icons=true&theme=tokyonight&hide_border=true&bg_color=050a14&title_color=00E599&text_color=94a3b8&icon_color=00E599" 
-    alt="Mitchel's GitHub Stats" 
-    width="48%" 
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=mitchndinda-code&show_icons=true&theme=tokyonight&hide_border=true&bg_color=050a14&title_color=00E599&text_color=94a3b8&icon_color=00E599"
+    alt="Mitchel's GitHub Stats"
+    width="48%"
   />
   &nbsp;
   <!-- GitHub Streak Card -->
-  <img 
-    src="https://github-readme-streak-stats.herokuapp.com/?user=mitchndinda-code&theme=tokyonight&hide_border=true&background=050a14&ring=00E599&fire=00E599&currStreakLabel=00E599" 
-    alt="Mitchel's Streak Stats" 
-    width="48%" 
+  <img
+    src="https://github-readme-streak-stats.herokuapp.com/?user=mitchndinda-code&theme=tokyonight&hide_border=true&background=050a14&ring=00E599&fire=00E599&currStreakLabel=00E599"
+    alt="Mitchel's Streak Stats"
+    width="48%"
   />
 
   <br/><br/>
 
   <!-- Top Languages Card -->
-  <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=mitchndinda-code&layout=compact&theme=tokyonight&hide_border=true&bg_color=050a14&title_color=00E599&text_color=94a3b8" 
-    alt="Most Used Languages" 
-    width="65%" 
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=mitchndinda-code&layout=compact&theme=tokyonight&hide_border=true&bg_color=050a14&title_color=00E599&text_color=94a3b8"
+    alt="Most Used Languages"
+    width="65%"
   />
 
 </div>
