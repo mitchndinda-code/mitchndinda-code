@@ -3,7 +3,7 @@
   <!-- Profile Image with Glowing Neon Cyber Border -->
   <a href="https://github.com/mitchndinda-code">
     <img 
-      src="./public/images/profile.jpg" 
+      src=".mitchel.jpeg" 
       alt="Mitchel Ndinda Martin" 
       width="160" 
       height="160" 
